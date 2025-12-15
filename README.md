@@ -1,5 +1,4 @@
-# 📘 Judul Proyek
-*Analisis Klasifikasi Status Batu Empedu pada Dataset Klinis Menggunakan Machine Learning dan Deep Learning*
+# 📘 *Analisis Klasifikasi Status Batu Empedu pada Dataset Klinis Menggunakan Machine Learning dan Deep Learning*
 
 ## 👤 Informasi
 - **Nama:** [Widya Wulandari]  
@@ -73,48 +72,49 @@ project/
 - **Jumlah Data:** [319]  
 - **Tipe:** [Tabular]  
 
-### Fitur Utama
-| Fitur | Deskripsi |
-| :--- | :--- |
-| **Gallstone Status** | **Variabel Target:** Status keberadaan batu empedu. **0 (Ada Batu Empedu)**, **1 (Tidak Ada Batu Empedu)**. |
-| **Age** | Usia orang tersebut (tahun). |
-| **Gender** | Jenis kelamin orang tersebut, 0 (Laki-laki), 1 (Perempuan). |
-| **Comorbidity** | Penyakit penyerta (komorbiditas): 0 (Tidak ada), 1 (Satu kondisi), 2 (Dua kondisi), 3 (Tiga atau lebih kondisi). |
-| **Coronary Artery Disease (CAD)** | Penyakit kardiovaskular: 0 (Tidak), 1 (Ya). |
-| **Hypothyroidism** | Kelenjar tiroid yang kurang aktif atau Hipotiroidisme: 0 (Tidak), 1 (Ya). |
-| **Hyperlipidemia** | Kadar lemak tinggi dalam darah: 0 (Tidak), 1 (Ya). |
-| **Diabetes Mellitus (DM)** | Gula darah tinggi: 0 (Tidak), 1 (Ya). |
-| **Height** | Tinggi badan. |
-| **Weight** | Berat badan. |
-| **Body Mass Index (BMI)** | Rasio berat badan terhadap tinggi badan. |
-| **Total Body Water (TBW)** | Total air dalam tubuh. |
-| **Extracellular Water (ECW)** | Semua cairan tubuh yang berada di luar sel (plasma, cairan interstisial, dll.). |
-| **Intracellular Water (ICW)** | Semua cairan yang terkandung di dalam sel-sel tubuh. |
-| **Extracellular Fluid/Total Body Water (ECF/TBW)** | Rasio kandungan air ekstraseluler terhadap total air tubuh. |
-| **Total Body Fat Ratio (TBFR)** | Total Lemak Tubuh (%). |
-| **Lean Mass (LM)** | Massa tubuh tanpa lemak (%). |
-| **Body Protein Content (Protein)** | Kandungan Protein, Lemak, Karbohidrat, Vitamin, dan Mineral (%). |
-| **Visceral Fat Rating (VFR)** | Kadar lemak organ dalam. |
-| **Bone Mass (BM)** | Berat tulang. |
-| **Muscle Mass (MM)** | Massa otot. |
-| **Obesity** | Kelebihan lemak tubuh (%). |
-| **Total Fat Content (TFC)** | Total kadar lemak. |
-| **Visceral Fat Area (VFA)** | Area jaringan lemak dalam. |
-| **Visceral Muscle Area (VMA)** | Area otot dalam (kg). |
-| **Hepatic Fat Accumulation (HFA)** | Penumpukan lemak di hati: 0 (Tidak ada) hingga 4 (Tingkat 4/sangat parah). |
-| **Glucose** | Gula darah. |
-| **Total Cholesterol (TC)** | Ukuran gabungan dari semua jenis kolesterol dalam darah (HDL, LDL, Trigliserida). |
-| **Low Density Lipoprotein (LDL)** | Kolesterol jahat. |
-| **High Density Lipoprotein (HDL)** | Kolesterol baik. |
-| **Triglyceride** | Jenis lemak yang ditemukan dalam darah. |
-| **Aspartat Aminotransferaz (AST)** | Jenis enzim hati. |
-| **Alanin Aminotransferaz (ALT)** | Enzim yang berhubungan dengan hati. |
-| **Alkaline Phosphatase (ALP)** | Jenis enzim hati dan tulang. |
-| **Creatinine** | Indikator fungsi ginjal. |
-| **Glomerular Filtration Rate (GFR)** | Laju filtrasi ginjal. |
-| **C-Reactive Protein (CRP)** | Indikator peradangan. |
-| **Hemoglobin (HGB)** | Protein dalam darah yang membawa oksigen. |
-| **Vitamin D** | Vitamin esensial untuk kesehatan tulang. |
+## Fitur Utama
+
+| Nama Fitur | Tipe Data | Deskripsi | Contoh Nilai |
+| :--- | :--- | :--- | :--- |
+| **Gallstone Status** | Integer | **Variabel Target:** Status keberadaan batu empedu. **0 (Ada Batu Empedu)** dan **1 (Tidak Ada Batu Empedu)**. | 0, 1 |
+| **Age** | Integer | Usia orang tersebut (tahun). | 50, 47, 61 |
+| **Gender** | Categorical | Jenis kelamin orang tersebut: **0 (Laki-laki)**, **1 (Perempuan)**. | 0, 1 |
+| **Comorbidity** | Categorical | Penyakit penyerta (komorbiditas): 0 (Tidak ada), 1 (Satu), 2 (Dua), 3 (Tiga atau lebih). | 0, 1, 2, 3 |
+| **Coronary Artery Disease (CAD)** | Binary | Penyakit kardiovaskular: 0 (Tidak), 1 (Ya). | 0, 1 |
+| **Hypothyroidism** | Binary | Kelenjar tiroid yang kurang aktif atau Hipotiroidisme: 0 (Tidak), 1 (Ya). | 0, 1 |
+| **Hyperlipidemia** | Binary | Kadar lemak tinggi dalam darah: 0 (Tidak), 1 (Ya). | 0, 1 |
+| **Diabetes Mellitus (DM)** | Binary | Gula darah tinggi: 0 (Tidak), 1 (Ya). | 0, 1 |
+| **Height** | Integer | Tinggi badan. | 185, 176, 171 |
+| **Weight** | Float | Berat badan. | 92.8, 94.5, 91.1 |
+| **Body Mass Index (BMI)** | Float | Rasio berat badan terhadap tinggi badan. | 27.1, 30.5, 31.2 |
+| **Total Body Water (TBW)** | Float | Total air dalam tubuh. | 52.9, 43.1, 47.2 |
+| **Extracellular Water (ECW)** | Float | Semua cairan tubuh yang berada di luar sel (plasma, cairan interstisial, dll.). | 21.2, 19.5, 20.1 |
+| **Intracellular Water (ICW)** | Float | Semua cairan yang terkandung di dalam sel-sel tubuh. | 31.7, 23.6, 27.1 |
+| **Extracellular Fluid/Total Body Water (ECF/TBW)** | Float | Rasio kandungan air ekstraseluler terhadap total air tubuh. | 40, 45, 43 |
+| **Total Body Fat Ratio (TBFR)** | Float | Total Lemak Tubuh (%). | 19.2, 32.8, 27.3 |
+| **Lean Mass (LM)** | Float | Massa tubuh tanpa lemak (%). | 80.84, 67.2, 72.67 |
+| **Body Protein Content (Protein)** | Float | Kandungan Protein, Lemak, Karbohidrat, Vitamin, dan Mineral (%). | 18.88, 16.68, 16.35 |
+| **Visceral Fat Rating (VFR)** | Integer | Kadar lemak organ dalam. | 9, 15, 6 |
+| **Bone Mass (BM)** | Float | Berat tulang. | 3.7, 3.2, 3.3 |
+| **Muscle Mass (MM)** | Float | Massa otot. | 71.4, 60.3, 62.9 |
+| **Obesity** | Float | Kelebihan lemak tubuh (%). | 23.4, 38.8, 41.7 |
+| **Total Fat Content (TFC)** | Float | Total kadar lemak. | 17.8, 31, 24.9 |
+| **Visceral Fat Area (VFA)** | Float | Area jaringan lemak dalam. | 10.6, 18.4, 16.2 |
+| **Visceral Muscle Area (VMA)** | Float | Area otot dalam (kg). | 39.7, 32.7, 34 |
+| **Hepatic Fat Accumulation (HFA)** | Categorical | Penumpukan lemak di hati: 0 (Tidak ada) hingga 4 (Sangat parah). | 0, 1, 2, 3, 4 |
+| **Glucose** | Float | Gula darah. | 102, 94, 103 |
+| **Total Cholesterol (TC)** | Float | Ukuran gabungan dari semua jenis kolesterol dalam darah. | 250, 172, 179 |
+| **Low Density Lipoprotein (LDL)** | Float | Kolesterol jahat. | 175, 108, 124 |
+| **High Density Lipoprotein (HDL)** | Float | Kolesterol baik. | 40, 43, 59 |
+| **Triglyceride** | Float | Jenis lemak yang ditemukan dalam darah. | 134, 103, 69 |
+| **Aspartat Aminotransferaz (AST)** | Float | Jenis enzim hati. | 20, 14, 18 |
+| **Alanin Aminotransferaz (ALT)** | Float | Enzim yang berhubungan dengan hati. | 22, 13, 14 |
+| **Alkaline Phosphatase (ALP)** | Float | Jenis enzim hati dan tulang. | 87, 46, 66 |
+| **Creatinine** | Float | Indikator fungsi ginjal. | 0.82, 0.87, 1.25 |
+| **Glomerular Filtration Rate (GFR)** | Float | Laju filtrasi ginjal. | 112.47, 107.1, 65.51 |
+| **C-Reactive Protein (CRP)** | Float | Indikator peradangan. | 0, 0.11, 1.57 |
+| **Hemoglobin (HGB)** | Float | Protein dalam darah yang membawa oksigen. | 16, 14.4, 16.2 |
+| **Vitamin D** | Float | Vitamin esensial untuk kesehatan tulang. | 33, 25, 30.2 |
 
 ---
 
