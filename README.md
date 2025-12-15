@@ -1,9 +1,9 @@
 # 📘 *Analisis Klasifikasi Status Batu Empedu pada Dataset Klinis Menggunakan Machine Learning dan Deep Learning*
 
 ## 👤 Informasi
-- **Nama:** [Widya Wulandari]  
-- **Repo:** [https://github.com/widyawuland/Klasifikasi-Status-Batu-Empedu.git]  
-- **Video:** [...]  
+- **Nama:** Widya Wulandari
+- **Repo:** https://github.com/widyawuland/Klasifikasi-Status-Batu-Empedu.git
+- **Video:** 
 
 ---
 
