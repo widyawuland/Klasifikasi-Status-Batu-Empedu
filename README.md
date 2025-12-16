@@ -220,103 +220,98 @@ scikit-learn==1.3.0
 matplotlib==3.7.2
 seaborn==0.12.2
 tensorflow==2.14.0
+```
+---
 
-🚀 Cara Menjalankan Proyek
-1️⃣ Installation
-Clone Repository
+# 🚀 10. Cara Menjalankan Proyek
+
+Panduan berikut menjelaskan cara menjalankan proyek klasifikasi status batu empedu baik secara **lokal** maupun menggunakan **Google Colab**.
+
+---
+
+## Clone Repository
+
+```bash
 git clone https://github.com/widyawuland/Klasifikasi-Status-Batu-Empedu.git
 cd Klasifikasi-Status-Batu-Empedu
+```
 
-(Opsional) Buat Virtual Environment
+---
 
-Windows
+## Create Virtual Environment (Opsional)
 
-python -m venv venv
-venv\Scripts\activate
-
-
-Linux / macOS
-
+### Linux / macOS
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
-Install Dependencies
+### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-2️⃣ Dataset
+---
 
-Dataset berasal dari Kaggle (Gallstone Dataset – UCI).
+## Download Dataset
 
-📎 Link dataset:
+Unduh dataset dari Kaggle:  
 https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci
 
-Cara menggunakan dataset:
+Simpan sebagai:
+```bash
+data/gallstone_.csv
+```
 
-Download dataset dari Kaggle
+---
 
-Simpan file gallstone_.csv ke dalam folder:
+## Running the Project
 
-data/
-└── gallstone_.csv
+### Option 1: Script Modular
 
-3️⃣ Running the Project
-✅ Opsi 1: Menggunakan Google Colab (Direkomendasikan)
-
-Buka notebook:
-
-notebooks/UAS_234311056_WIDYA_WULANDARI.ipynb
-
-
-Upload notebook ke Google Colab
-
-Upload file dataset ke folder /data
-
-Jalankan semua cell:
-
-Runtime → Run all
-
-
-⏱ Estimasi waktu eksekusi: 5–10 menit (CPU)
-
-✅ Opsi 2: Menjalankan Pipeline Secara Bertahap (Local)
-
-Jalankan script sesuai urutan berikut:
-
-# Download & Load Dataset
+```bash
 python src/Download\ dan\ Load\ Dataset.py
-
-# Exploratory Data Analysis
 python src/Exploratory\ Data\ Analysis\ \(EDA\).py
-
-# Data Cleaning
 python src/Data\ Cleaning.py
-
-# Feature Engineering
 python src/Feature\ Engineering.py
-
-# Data Splitting
 python src/Data\ Splitting.py
-
-# Data Transformation
 python src/Data\ Transformation.py
-
-# Modeling & Evaluation
 python src/Modeling.py
+```
 
-4️⃣ Output yang Dihasilkan
+Output model:
+```bash
+models/
+```
 
-Model tersimpan di folder models/
+---
 
-Visualisasi hasil training dan evaluasi di folder images/
+### Option 2: Jupyter Notebook
 
-Confusion matrix, training history, feature importance, dan perbandingan model
+```bash
+jupyter notebook
+```
 
-5️⃣ Catatan Penting
+Buka:
+```bash
+notebooks/UAS_234311056_WIDYA_WULANDARI.ipynb
+```
 
-Project ini menggunakan TensorFlow (MLP) dan Scikit-learn
+---
 
-Training dilakukan menggunakan CPU
+### Option 3: Google Colab
 
-Untuk hasil yang konsisten, gunakan random_state=42
+1. Buka https://colab.research.google.com
+2. Upload notebook `UAS_234311056_WIDYA_WULANDARI.ipynb`
+4. Run All
 
-Perbedaan kecil pada akurasi dapat terjadi karena proses training neural network bersifat stochastic
+Estimasi waktu: **10–15 menit**
