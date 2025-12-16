@@ -68,9 +68,9 @@ project/
 ---
 
 # 3. 📊 Dataset
-- **Sumber:** [https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci]  
-- **Jumlah Data:** [319]  
-- **Tipe:** [Tabular]  
+- **Sumber:** https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci 
+- **Jumlah Data:** 319  
+- **Tipe:** Tabular 
 
 ## Fitur Utama
 
@@ -144,9 +144,9 @@ Penambahan fitur klinis turunan:
 ---
 
 # 5. 🤖 Modeling
-- **Model 1 – Baseline:** [Logistic Regression]  
-- **Model 2 – Advanced ML:** [Gradient Boosting Classifier]  
-- **Model 3 – Deep Learning:** [Multilayer Perceptron (MLP)]  
+- **Model 1 – Baseline:** Logistic Regression
+- **Model 2 – Advanced ML:** Gradient Boosting Classifier  
+- **Model 3 – Deep Learning:** Multilayer Perceptron (MLP)  
 
 ---
 
