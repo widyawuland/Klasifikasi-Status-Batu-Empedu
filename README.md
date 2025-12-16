@@ -220,3 +220,103 @@ scikit-learn==1.3.0
 matplotlib==3.7.2
 seaborn==0.12.2
 tensorflow==2.14.0
+
+🚀 Cara Menjalankan Proyek
+1️⃣ Installation
+Clone Repository
+git clone https://github.com/widyawuland/Klasifikasi-Status-Batu-Empedu.git
+cd Klasifikasi-Status-Batu-Empedu
+
+(Opsional) Buat Virtual Environment
+
+Windows
+
+python -m venv venv
+venv\Scripts\activate
+
+
+Linux / macOS
+
+python3 -m venv venv
+source venv/bin/activate
+
+Install Dependencies
+pip install -r requirements.txt
+
+2️⃣ Dataset
+
+Dataset berasal dari Kaggle (Gallstone Dataset – UCI).
+
+📎 Link dataset:
+https://www.kaggle.com/datasets/xixama/gallstone-dataset-uci
+
+Cara menggunakan dataset:
+
+Download dataset dari Kaggle
+
+Simpan file gallstone_.csv ke dalam folder:
+
+data/
+└── gallstone_.csv
+
+3️⃣ Running the Project
+✅ Opsi 1: Menggunakan Google Colab (Direkomendasikan)
+
+Buka notebook:
+
+notebooks/UAS_234311056_WIDYA_WULANDARI.ipynb
+
+
+Upload notebook ke Google Colab
+
+Upload file dataset ke folder /data
+
+Jalankan semua cell:
+
+Runtime → Run all
+
+
+⏱ Estimasi waktu eksekusi: 5–10 menit (CPU)
+
+✅ Opsi 2: Menjalankan Pipeline Secara Bertahap (Local)
+
+Jalankan script sesuai urutan berikut:
+
+# Download & Load Dataset
+python src/Download\ dan\ Load\ Dataset.py
+
+# Exploratory Data Analysis
+python src/Exploratory\ Data\ Analysis\ \(EDA\).py
+
+# Data Cleaning
+python src/Data\ Cleaning.py
+
+# Feature Engineering
+python src/Feature\ Engineering.py
+
+# Data Splitting
+python src/Data\ Splitting.py
+
+# Data Transformation
+python src/Data\ Transformation.py
+
+# Modeling & Evaluation
+python src/Modeling.py
+
+4️⃣ Output yang Dihasilkan
+
+Model tersimpan di folder models/
+
+Visualisasi hasil training dan evaluasi di folder images/
+
+Confusion matrix, training history, feature importance, dan perbandingan model
+
+5️⃣ Catatan Penting
+
+Project ini menggunakan TensorFlow (MLP) dan Scikit-learn
+
+Training dilakukan menggunakan CPU
+
+Untuk hasil yang konsisten, gunakan random_state=42
+
+Perbedaan kecil pada akurasi dapat terjadi karena proses training neural network bersifat stochastic
